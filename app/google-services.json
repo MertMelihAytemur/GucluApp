@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847138775036",
+    "firebase_url": "https://gucluapp.firebaseio.com",
+    "project_id": "gucluapp",
+    "storage_bucket": "gucluapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847138775036:android:c75ccbe5e52fb77f455c79",
+        "android_client_info": {
+          "package_name": "xyz.mermela.gucluapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847138775036-4s27hl955t17s5eou0lhogkq9smlt0i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4OqmaZ2SmV52-7GT5_SCHIzQaStfRqTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847138775036-4s27hl955t17s5eou0lhogkq9smlt0i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
