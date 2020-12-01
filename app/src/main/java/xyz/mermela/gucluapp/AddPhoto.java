@@ -55,7 +55,7 @@ public class AddPhoto extends AppCompatActivity  {
     private TextView locationText;
     private Button button_upload;
 
-    private Uri mImageUri;
+    private Uri mImageUri;   //Görselin yolunu işaret eder.
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
 
@@ -100,7 +100,6 @@ public class AddPhoto extends AppCompatActivity  {
 
                         ActivityCompat.requestPermissions(AddPhoto.this,
                                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
-
 
                 }
             }
@@ -178,8 +177,10 @@ public class AddPhoto extends AppCompatActivity  {
                             progressDialog.dismiss();
                             Toast.makeText(AddPhoto.this, "Uploaded", Toast.LENGTH_SHORT).show();
                             Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+
                             while (!urlTask.isSuccessful());
                             Uri downloadUrl = urlTask.getResult();
+
                             Intent intent = getIntent();
                             String username = intent.getStringExtra("username");
 
@@ -209,7 +210,6 @@ public class AddPhoto extends AppCompatActivity  {
 
         }else
             Toast.makeText(getApplicationContext(),"Empty file",Toast.LENGTH_SHORT).show();
-
 
     }
 
